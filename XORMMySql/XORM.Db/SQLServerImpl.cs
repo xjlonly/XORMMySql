@@ -335,18 +335,23 @@ namespace XORM.Db
 
         private void CacheParameters(string cacheKey, params SqlParameter[] commandParameters)
         {
-            this.parmCache[(object)cacheKey] = (object)commandParameters;
+            this.parmCache[cacheKey] = commandParameters;
         }
 
+        /// <summary>
+        /// 操作时把放入缓存中的参数取出来
+        /// </summary>
+        /// <param name="cacheKey"></param>
+        /// <returns></returns>
         private SqlParameter[] GetCachedParameters(string cacheKey)
         {
             SqlParameter[] sqlParameterArray1 = (SqlParameter[])this.parmCache[(object)cacheKey];
             if (sqlParameterArray1 == null)
-                return (SqlParameter[])null;
+                return null;
             SqlParameter[] sqlParameterArray2 = new SqlParameter[sqlParameterArray1.Length];
             int index = 0;
             for (int length = sqlParameterArray1.Length; index < length; ++index)
-                sqlParameterArray2[index] = (SqlParameter)sqlParameterArray1[index].Clone();
+                sqlParameterArray2[index] = (SqlParameter)((ICloneable)sqlParameterArray1[index]).Clone();
             return sqlParameterArray2;
         }
 
