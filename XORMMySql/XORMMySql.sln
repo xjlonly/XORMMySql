@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORM.Db", "XORM.Db\XORM.Db.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORM.Base", "XORM.Base\XORM.Base.csproj", "{24D095BB-2E44-42C6-87BE-461391A829A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL.NetDBS", "MySQL.NBS\MySQL.NetDBS.csproj", "{EFB96AFA-978E-43EE-BA84-82E55416C99A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{24D095BB-2E44-42C6-87BE-461391A829A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24D095BB-2E44-42C6-87BE-461391A829A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24D095BB-2E44-42C6-87BE-461391A829A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB96AFA-978E-43EE-BA84-82E55416C99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB96AFA-978E-43EE-BA84-82E55416C99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB96AFA-978E-43EE-BA84-82E55416C99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB96AFA-978E-43EE-BA84-82E55416C99A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
