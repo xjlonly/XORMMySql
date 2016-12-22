@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LIXX.DBS</RootNamespace>
-    <AssemblyName>代码生成器v3.1</AssemblyName>
+    <AssemblyName>MySQL代码生成器V1.0</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
